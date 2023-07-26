@@ -31,11 +31,44 @@ select {
 /* END OF RESETS */
 
 :root {
-  --clr-bg: hsl(227, 37%, 12%);
+  --clr-neutral-800: hsl(227, 37%, 22%);
+  --clr-neutral-900: hsl(227, 37%, 12%);
+
   --clr-primary: hsl(49, 97%, 74%);
 }
 
 body {
-    background-color: var(--clr-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    background-color: var(--clr-neutral-900);
     color: var(--clr-primary);
+}
+
+.header{
+  background-color: var(--clr-neutral-800);
+
+}
+
+.main {
+
+}
+
+.footer {
+  background-color: var(--clr-neutral-800);
+}
+
+.gameboard {
+  display: grid;
+  margin: 0 auto;
+  width: 40rem;
+  height: 40rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: .5rem;
+}
+
+.tile {
+  background-color: var(--clr-neutral-800);
 }

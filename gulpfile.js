@@ -26,7 +26,7 @@ function browserSyncReload(cb) {
 
 // Watch Task
 function watchTask() {
-  watch(["index.html", "style.css"], browserSyncReload);
+  watch(["index.html", "style.css", "script.js"], browserSyncReload);
 }
 
 // Default Gulp Task
